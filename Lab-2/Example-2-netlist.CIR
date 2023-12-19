@@ -1,0 +1,11 @@
+Lab_2_Example_2.cir
+R1	1	2	8
+R2	3	4	20
+R3	0	4	8
+R4	5	2	16
+R5	0	5	4
+G1	3	2	5	0	0.5
+V1	1	0	DC 10
+.DC V1 10 10 1
+.PRINT DC V(5,0)
+.END
