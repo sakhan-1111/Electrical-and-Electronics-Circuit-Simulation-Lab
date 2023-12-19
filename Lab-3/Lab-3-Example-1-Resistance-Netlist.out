@@ -1,0 +1,32 @@
+
+**** 10/23/17 18:14:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ LAB-3-EXAMPLE-1-RESISTOR.cir
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+R1      1       3       5
+R2      2       3       5
+R3      2       0       10
+R4      4       3       20
+R5      3       5       10
+V1 1    0       DC      10V
+I1      0       4       DC 1A
+G1      0       3       2       0       2
+RL      5       0       {R}
+.PARAM R=10
+.DC     PARAM   R       1       20      1
+.PROBE
+.END
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+
