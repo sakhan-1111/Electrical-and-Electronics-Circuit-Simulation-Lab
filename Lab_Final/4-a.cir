@@ -1,0 +1,21 @@
+* C:\Users\Administrator\Desktop\Exam\4-a.sch
+
+* Schematics Version 9.2
+* Wed Dec 13 11:27:04 2017
+
+
+
+** Analysis setup **
+.tran 20us 150ms 0 20us
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "4-a.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

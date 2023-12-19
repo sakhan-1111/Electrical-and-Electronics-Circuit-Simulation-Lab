@@ -1,0 +1,13 @@
+* Schematics Netlist *
+
+
+
+Kn_K1         L_L1 L_L2     0.999
+L_L2         0 4  0.5mH  
+L_L1         2 0  0.5H  
+R_R2         4 6  0.5  
+R_RL         6 7  150  
+V_V2         7 0 0V
+R_R1         1 2  0.5  
+V_Sin         1 0  
++SIN 0 120 60 0 0 0

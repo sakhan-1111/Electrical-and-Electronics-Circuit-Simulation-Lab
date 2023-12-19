@@ -1,0 +1,110 @@
+
+**** 12/13/17 11:44:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Administrator\Desktop\Exam\3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Wed Dec 13 11:44:31 2017
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "3.net"
+
+
+
+**** INCLUDING 3.net ****
+* Schematics Netlist *
+
+
+
+V_V1         a 0 24V
+R_R1         b $N_0001  10  
+R_R2         $N_0001 0  12  
+R_R3         $N_0001 $N_0002  4  
+R_R4         $N_0002 a  24  
+X_H1    a b $N_0002 0 3_H1 
+
+.subckt 3_H1 1 2 3 4  
+H_H1         3 4 VH_H1 4
+VH_H1         1 2 0V
+.ends 3_H1
+
+**** RESUMING 3.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 12/13/17 11:44:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Administrator\Desktop\Exam\3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    a)   24.0000  (    b)   24.0000  ($N_0001)    9.0000                       
+
+($N_0002)    6.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.250E+00
+    X_H1.VH_H1   1.500E+00
+
+    TOTAL POWER DISSIPATION   5.40E+01  WATTS
+
+
+**** 12/13/17 11:44:35 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Administrator\Desktop\Exam\3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** CURRENT-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_H1.H_H1 
+V-SOURCE     6.000E+00
+I-SOURCE     1.500E+00
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

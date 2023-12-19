@@ -1,0 +1,15 @@
+* Schematics Netlist *
+
+
+
+V_V1         a 0 24V
+R_R1         b $N_0001  10  
+R_R2         $N_0001 0  12  
+R_R3         $N_0001 $N_0002  4  
+R_R4         $N_0002 a  24  
+X_H1    a b $N_0002 0 3_H1 
+
+.subckt 3_H1 1 2 3 4  
+H_H1         3 4 VH_H1 4
+VH_H1         1 2 0V
+.ends 3_H1
