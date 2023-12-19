@@ -1,0 +1,7 @@
+Lab_4_Exercise_1.CIR
+V1	1	0	DC	10V
+R1	1	2	1k
+Lag	2	0	1H	IC=0
+.TRAN	20us	15ms	0ms	10us	UIC
+.PROBE
+.END
